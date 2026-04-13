@@ -1,0 +1,46 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #111;
+        color: #eee;
+    }
+
+    body.debug header.main-head,
+    body.debug nav.main-nav,
+    body.debug main.content,
+    body.debug aside.side,
+    body.debug div.ad,
+    body.debug footer.main-footer {
+        color: #eee;
+    }
+
+    a {
+        color: #9fc2dc;
+    }
+}
+
+body.force-dark {
+    background-color: #111;
+    color: #eee;
+}
+
+body.force-dark.debug header.main-head,
+body.force-dark.debug nav.main-nav,
+body.force-dark.debug main.content,
+body.force-dark.debug aside.side,
+body.force-dark.debug div.ad,
+body.force-dark.debug footer.main-footer {
+    color: #eee;
+}
+
+body.force-dark a {
+    color: #9fc2dc;
+}
+
+body.force-light {
+    background-color: white;
+    color: black;
+}
+
+body.force-light a {
+    color: blue;
+}

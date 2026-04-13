@@ -1,0 +1,36 @@
+html {
+    direction: rtl;
+}
+
+.wrapper {
+    gap: 1.25rem;
+}
+
+@media (width >=500px) {
+    .wrapper {
+        grid-template-areas:
+            "header  header"
+            "nav     nav"
+            "content sidebar"
+            "footer  ad";
+    }
+}
+
+@media (width >=700px) {
+    .wrapper {
+        grid-template-areas:
+            "header  header header"
+            "sidebar content nav"
+            "ad      content nav"
+            "footer  footer  footer";
+    }
+}
+
+.wrapper > * {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+}
+
+.main-nav ul {
+    padding-inline-start: 0;
+}
